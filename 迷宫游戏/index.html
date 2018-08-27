@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/viewprort.js"></script>
+		<link rel="stylesheet" href="css/css.css" />
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js" ></script>
+		<script type="text/javascript" src="js/popup.js" ></script>
+		
+		<script type="text/javascript" src="js/commonFunctions.js" ></script>
+		<script src="js/main.js"></script>
+		<script type="text/javascript" src="js/ball.js" ></script>
+		<script type="text/javascript" src="js/wall.js" ></script>
+		<script type="text/javascript" src="js/gold.js" ></script>
+	</head>
+
+	<body>
+		
+		<div class="home">
+			<div class="tab">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr><th>榜单名次</th><th>用户名称</th><th>获得奖励</th></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+				</table>
+			</div>
+			<div class="txt">
+				<a href="#">我的奖金</a>　　　<a href="#" class="rulea">游戏规则</a>
+			</div>
+			<button class="play">剩余挑战次数：1次</button><br />
+			<button class="yaoqing"></button>
+		</div>
+		
+		<div class="game">
+			<p><span>游戏玩法：</span><br />
+倒计时结束前，上下左右倾斜手机移动角色，躲避陷阱，获得金币，抵达终点后根据金币获得数量给予现金红包，此外还可以获得1枚5周年纪念币奖励哦</p>
+			<div class="can">
+				<div class="time">剩余时间<span id="countDown">20秒</span></div>
+				<canvas id="canvas" width="750" height="1006"></canvas>
+			</div>
+		</div>
+		
+		<div class="pop win">
+			<div class="txt">完美通关，您获得现金红包X元和周年纪念币X枚，邀请好友参与游戏可以获得更多游戏次数。</div>
+			<div class="btnbox">
+				<button class="btn1">继续游戏(5)</button>
+				<button class="btn2">邀请好友</button>
+			</div>
+			<p><a href="#">我的奖金</a></p>
+		</div>
+		
+		<div class="pop lose">
+			<div class="txt">没有通关，也有壕礼~<br />我们为您准备了268元大礼包，邀请好友参与游戏可以获得更多游戏次数。</div>
+			<div class="btnbox">
+				<button class="btn1">继续游戏(5)</button>
+				<button class="btn2">邀请好友</button>
+			</div>
+			<p><a href="#">我的奖金</a></p>
+		</div>
+		
+		<div class="pop rule">
+			<div class="close"></div>
+			<div class="tit">游戏规则</div>
+			<div class="txt">
+				1.仅限钱爸爸注册用户参与游戏。<br /><br />
+
+2.用户每次成功通关后获得随机现金红包奖励（活动结束后统一结算）和1枚5周年纪念币（活动中可使用的虚拟币）。<br /><br />
+
+3.用户每天有5次游戏机会，充值10000获得1次游戏机会，分享给好友，好友注册即获得1次游戏机会，第二天0点后前一天游戏次数清零。<br /><br />
+
+4.分享给好友，好友参与游戏后，您可获得好友所获奖励的百分之50%现金红包奖励。
+			</div>
+		</div>
+		
+		<div class="pop cai">
+			<div class="close"></div>
+			<div class="num">1000</div>
+			<p>获得周年纪念币(枚)：1000</p>
+		</div>
+		
+		<div class="share"></div>
+		
+		<div class="cover"></div>
+		
+		<div class="spxd"></div>
+		
+	</body>
+</html>

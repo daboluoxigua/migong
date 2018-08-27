@@ -1,0 +1,74 @@
+@rem:640/750/40rem;
+*{border: 0;padding: 0;margin: 0; box-sizing: border-box;}
+html,body{font-family: "微软雅黑";font-size: 28/40rem; height: 100%; background: #f94662;}
+
+@media all and (orientation: portrait) {
+    .spxd{display: none;} 
+}
+@media all and (orientation: landscape) {
+    .spxd {position: fixed;left: 0;top: 0;z-index: 9999;width: 100%;height: 100%;background: url(../images/sjxz.png) #000 center no-repeat;background-size: 30%;} 
+}
+
+
+.home{background: url(../images/index.jpg) #901c60 no-repeat;width: 100%;height:100%; background-size: 750*@rem 1206*@rem;float: left;text-align: center;
+    .tab{width: 590*@rem;margin: 450*@rem auto 0;height: 220*@rem;overflow: auto;
+        table{width: 100%;color: #fff; text-align: center;
+            th{font-weight: normal;}
+            td{color: #d58eb7;}
+        }
+    }
+    .txt{margin-top: 70*@rem;line-height: 60*@rem;a{color: #fff;}}
+    .play{background: url(../images/play.png);width: 394*@rem;height: 134*@rem;line-height: 200*@rem; background-size: 100% 100%;margin-top: 15*@rem;color: #fff;font-size: 22*@rem;}
+    .yaoqing{background: url(../images/yaoqing.png);width: 394*@rem;height: 134*@rem;line-height: 200*@rem; background-size: 100% 100%;margin-top: 15*@rem;}
+}
+
+
+.game{float: left;width: 100%;height: 1206*@rem;overflow: hidden; background: url(../images/bg.png) no-repeat #f94662; background-size: 750*@rem 1206*@rem;display: none;
+    p{color: #fff;font-size: 24*@rem;margin: 50*@rem 70*@rem 0;
+        span{font-size: 28*@rem;}
+    }
+    .can{width: 100%;height: 1006/40rem;margin:10*@rem auto 0;position: relative;text-align: center;
+        #canvas{width: 100%;margin: 0 auto;}
+        .time{color: #fff;background: rgba(0,0,0,0.3);width: 145*@rem;padding:10*@rem 0;border-radius: 5*@rem;margin:260*@rem 0 0 300*@rem;font-size: 20*@rem;position: absolute;
+        span{font-size: 32*@rem;display: block;}
+        }
+    }
+}
+
+.win{position: fixed;width: 100%;height: 1206*@rem;background: url(../images/win.png);background-size: 100% 100%;left: 0;top: 0;
+    .txt{margin: 405*@rem auto 0;width: 460*@rem;color: #fff;line-height: 45*@rem;font-size: 24*@rem;}
+    p{
+        a{color: #fff;float: right;margin-right: 140*@rem;}
+    }
+}
+
+.pop{display: none;z-index: 999;position: fixed;
+    .btnbox{width: 100%;text-align: center;margin-top: 30*@rem;
+        .btn1{width: 230*@rem;height: 102*@rem;background: url(../images/btn1.png);background-size: 100% 100%;font-size: 32*@rem;color: #FFFFFF;}
+        .btn2{width: 194*@rem;height: 102*@rem;background: url(../images/btn2.png);background-size: 100% 100%;font-size: 32*@rem;color: #FFFFFF;}
+    }
+}
+.lose{position: fixed;width: 688*@rem;height: 650*@rem;background: url(../images/lose.png);background-size: 100% 100%;left: 0;top: 0;
+    .txt{margin: 200*@rem auto 0;width: 460*@rem;color: #fff;line-height: 45*@rem;font-size: 24*@rem;}
+    p{
+        a{color: #fff;float: right;margin-right: 140*@rem;}
+    }
+}
+
+.rule{width: 655*@rem;border: 4*@rem solid #ffdad0; background: #e85934;border-radius: 10*@rem;color: #fff;
+    .tit{text-align: center;font-size: 32*@rem;margin-bottom: 15*@rem;padding: 30*@rem 30*@rem 0;}
+    .txt{font-size: 28*@rem;padding:0 30*@rem 30*@rem;}
+    .close{background: url(../images/close.png) no-repeat;width: 56*@rem;height: 170*@rem;position: absolute;bottom: -170*@rem;left: 50%;margin-left: -28*@rem;}
+}
+
+.cover{position: fixed;width: 100%;height: 100%;background: rgba(0,0,0,0.5);z-index: 90; display: none;}
+
+.cai{background: url(../images/cai.png);width: 663*@rem;height: 579*@rem;background-size: 100% 100%;text-align: center;
+    .num{display: inline-block;color: #fff712;font-size: 80*@rem;font-weight: bold;padding-top: 255*@rem;}
+    p{color: #fff;position: absolute;text-align: center;width: 100%;bottom: 1rem;}
+    .close{background: url(../images/close.png) no-repeat;width: 56*@rem;height: 170*@rem;position: absolute;bottom: -170*@rem;left: 50%;margin-left: -28*@rem;}
+}
+
+
+.share{position:fixed;width: 100%;height: 100%;top: 0;left: 0;background: url(../images/share.png) no-repeat 150*@rem 20*@rem rgba(0,0,0,0.5);background-size: 574*@rem 135*@rem;}
+

@@ -1,0 +1,263 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "微软雅黑";
+  font-size: 0.7rem;
+  height: 100%;
+  background: #f94662;
+}
+@media all and (orientation: portrait) {
+  .spxd {
+    display: none;
+  }
+}
+@media all and (orientation: landscape) {
+  .spxd {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: url(../images/sjxz.png) #000000 center no-repeat;
+    background-size: 30%;
+  }
+}
+.home {
+  background: url(../images/index.jpg) #901c60 no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 16rem 25.728rem;
+  float: left;
+  text-align: center;
+}
+.home .tab {
+  width: 12.58666667rem;
+  margin: 9.6rem auto 0;
+  height: 4.69333333rem;
+  overflow: auto;
+}
+.home .tab table {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+.home .tab table th {
+  font-weight: normal;
+}
+.home .tab table td {
+  color: #d58eb7;
+}
+.home .txt {
+  margin-top: 1.49333333rem;
+  line-height: 1.28rem;
+}
+.home .txt a {
+  color: #fff;
+}
+.home .play {
+  background: url(../images/play.png);
+  width: 8.40533333rem;
+  height: 2.85866667rem;
+  line-height: 4.26666667rem;
+  background-size: 100% 100%;
+  margin-top: 0.32rem;
+  color: #fff;
+  font-size: 0.46933333rem;
+}
+.home .yaoqing {
+  background: url(../images/yaoqing.png);
+  width: 8.40533333rem;
+  height: 2.85866667rem;
+  line-height: 4.26666667rem;
+  background-size: 100% 100%;
+  margin-top: 0.32rem;
+}
+.game {
+  float: left;
+  width: 100%;
+  height: 25.728rem;
+  overflow: hidden;
+  background: url(../images/bg.png) no-repeat #f94662;
+  background-size: 16rem 25.728rem;
+  display: none;
+}
+.game p {
+  color: #fff;
+  font-size: 0.512rem;
+  margin: 1.06666667rem 1.49333333rem 0;
+}
+.game p span {
+  font-size: 0.59733333rem;
+}
+.game .can {
+  width: 100%;
+  height: 25.15rem;
+  margin: 0.21333333rem auto 0;
+  position: relative;
+  text-align: center;
+}
+.game .can #canvas {
+  width: 100%;
+  margin: 0 auto;
+}
+.game .can .time {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  width: 3.09333333rem;
+  padding: 0.21333333rem 0;
+  border-radius: 0.10666667rem;
+  margin: 5.54666667rem 0 0 6.4rem;
+  font-size: 0.42666667rem;
+  position: absolute;
+}
+.game .can .time span {
+  font-size: 0.68266667rem;
+  display: block;
+}
+.win {
+  position: fixed;
+  width: 100%;
+  height: 25.728rem;
+  background: url(../images/win.png);
+  background-size: 100% 100%;
+  left: 0;
+  top: 0;
+}
+.win .txt {
+  margin: 8.64rem auto 0;
+  width: 9.81333333rem;
+  color: #fff;
+  line-height: 0.96rem;
+  font-size: 0.512rem;
+}
+.win p a {
+  color: #fff;
+  float: right;
+  margin-right: 2.98666667rem;
+}
+.pop {
+  display: none;
+  z-index: 999;
+  position: fixed;
+}
+.pop .btnbox {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.64rem;
+}
+.pop .btnbox .btn1 {
+  width: 4.90666667rem;
+  height: 2.176rem;
+  background: url(../images/btn1.png);
+  background-size: 100% 100%;
+  font-size: 0.68266667rem;
+  color: #FFFFFF;
+}
+.pop .btnbox .btn2 {
+  width: 4.13866667rem;
+  height: 2.176rem;
+  background: url(../images/btn2.png);
+  background-size: 100% 100%;
+  font-size: 0.68266667rem;
+  color: #FFFFFF;
+}
+.lose {
+  position: fixed;
+  width: 14.67733333rem;
+  height: 13.86666667rem;
+  background: url(../images/lose.png);
+  background-size: 100% 100%;
+  left: 0;
+  top: 0;
+}
+.lose .txt {
+  margin: 4.26666667rem auto 0;
+  width: 9.81333333rem;
+  color: #fff;
+  line-height: 0.96rem;
+  font-size: 0.512rem;
+}
+.lose p a {
+  color: #fff;
+  float: right;
+  margin-right: 2.98666667rem;
+}
+.rule {
+  width: 13.97333333rem;
+  border: 0.08533333rem solid #ffdad0;
+  background: #e85934;
+  border-radius: 0.21333333rem;
+  color: #fff;
+}
+.rule .tit {
+  text-align: center;
+  font-size: 0.68266667rem;
+  margin-bottom: 0.32rem;
+  padding: 0.64rem 0.64rem 0;
+}
+.rule .txt {
+  font-size: 0.59733333rem;
+  padding: 0 0.64rem 0.64rem;
+}
+.rule .close {
+  background: url(../images/close.png) no-repeat;
+  width: 1.19466667rem;
+  height: 3.62666667rem;
+  position: absolute;
+  bottom: -3.62666667rem;
+  left: 50%;
+  margin-left: -0.59733333rem;
+}
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  display: none;
+}
+.cai {
+  background: url(../images/cai.png);
+  width: 14.144rem;
+  height: 12.352rem;
+  background-size: 100% 100%;
+  text-align: center;
+}
+.cai .num {
+  display: inline-block;
+  color: #fff712;
+  font-size: 1.70666667rem;
+  font-weight: bold;
+  padding-top: 5.44rem;
+}
+.cai p {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 1rem;
+}
+.cai .close {
+  background: url(../images/close.png) no-repeat;
+  width: 1.19466667rem;
+  height: 3.62666667rem;
+  position: absolute;
+  bottom: -3.62666667rem;
+  left: 50%;
+  margin-left: -0.59733333rem;
+}
+.share {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/share.png) no-repeat 3.2rem 0.42666667rem rgba(0, 0, 0, 0.5);
+  background-size: 12.24533333rem 2.88rem;
+}
